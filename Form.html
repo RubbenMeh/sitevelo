@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/form.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="contact.php" method="post">
+      <!-- il existe 2 method post & get . post est pour la securité , get sont pour les inutile  -->
+      <fieldset>
+        <legend>Etat Civil</legend>
+        <div class="genre">
+          <label for="femme">Femme</label>
+          <input type="radio" name="genre" id="femme" />
+          <label for="homme">Homme</label>
+          <input type="radio" name="genre" id="homme" />
+          <!-- for est une transition entre le id & php s'affiche -->
+          <!-- input radio = un bouton a choix unique de base -->
+          <!-- le label est la pour affiché les choix -->
+        </div>
+        <!-- <label for="nom">Votre</label>
+        <input type="text" name="nom" id="nom"> -->
+        <input
+          type="text"
+          name="nom"
+          id="nom"
+          placeholder="Votre nom"
+          required
+          aria-placeholder="Votre Nom"
+        />
+        <!-- Accessible Rich Internet Applications (ARIA) (qu'on pourrait traduire par « applications internet riches et accessibles ») 
+            pour les personnes hadicaper , pour les personnes qui voient pas -->
+        <input
+          type="text"
+          name="Prenom"
+          id="Prenom"
+          placeholder="Votre Prenom"
+          required
+          aria-placeholder="Votre Prenom"
+        />
+      </fieldset>
+
+      <fieldset>
+        <legend>Vos Coordonnées</legend>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Votre Email"
+          aria-placeholder="Votre Email"
+          required
+          autocomplete
+        />
+        <input
+          type="tel"
+          name="phone"
+          id="telephone"
+          placeholder="Votre Téléphone"
+          aria-placeholder="Votre Téléphone"
+        />
+      </fieldset>
+
+      <fieldset>
+        <legend>Vos besoins</legend>
+        <select name="oject" id="object">
+          <!-- select est un menu déroulant  -->
+
+          <option value="#">Selectionner</option>
+          <option value="rdv">Rendez vous</option>
+          <option value="call">Telephoner</option>
+          <option value="come">Venir</option>
+          <option value="slim">Jean Homme</option>
+          <!-- selected=selected sert a selectionner le choix principal des clients dans une grande 
+         liste en mettant tout en haut de la liste -->
+        </select>
+        <!-- textarea = zone de texte  -->
+        <textarea
+          name="message"
+          id="msg"
+          required
+          placeholder="Merci de nous expliquer vos besoins ..."
+        ></textarea>
+
+      </fieldset>
+
+      <fieldset>
+
+        <legend>Vos Competences</legend>
+
+      <div class="gerne">
+        <label for="html">html</label>
+        <input type="checkbox" id="html" />
+        <label for="html">css</label>
+        <input type="checkbox" id="css" />
+        <label for="html">js</label>
+        <input type="checkbox" id="js" />
+      </div>
+
+    </fieldset>
+
+    <label for="capcha">
+        Merci de repondre à la question
+        <input type="text" id="capcha" placeholder="La capitale de France " pattern="Paris| paris "required >
+
+    </label>
+
+      <input type="submit" value="Envoyer" />
+    </form>
+  </body>
+</html>

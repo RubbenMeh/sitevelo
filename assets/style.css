@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+header + section {
+  background: rgb(46, 49, 143);
+  width: 100%;
+  min-height: 511px;
+  display: flex;
+  justify-content: flex-end;
+}
+header+section>a>figure { background: white;
+width: 9%;
+min-height: 511px;
+position: absolute;
+right: 0;}
+
+header+section>a>figure>img{position: absolute;
+right: 0;}

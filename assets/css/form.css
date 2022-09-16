@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+form {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+/* flex par defaut mes horizotals */
+input,
+select {
+  width: 100%;
+  height: 30px;
+  margin: 10px 0;
+}
+textarea {
+  min-height: 200px;
+  resize: none;
+  width: 100%;
+  margin: 10px 0;
+}
+.genre {
+  display: flex;
+  align-items: center;
+
+
+}
+.genre > label {
+  width: 5%;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: 20px;
+  margin: 0 10px;
+}
+fieldset {
+  padding: 10px;
+  background: grey;
+  margin: 10px;
+}
+
+legend {
+  text-align: center;
+  color: red;
+  width: 100px;
+  display: block;
+  margin: auto;
+  border: 1px solid black;
+  background: white;
+}
+
+input[type="submit"] {
+  width: 100px;
+  background: red;
+  cursor: pointer;
+  border: 1px solid black;
+  margin: auto;
+  color: white;
+  font-size: 20px;
+}
+
+input[type="submit"]:hover {
+  background: green;
+}
+
+input:valid {
+  border: 3px solid green;
+}
+
+input:invalid{ border: 3px solid red;}
+/* select{ background: orange;} */
+
+ /* ul~li signifie appeler tout les li dans le ul , ul+li signifie appeler le 1er li dans le ul , ul,li signifie appeler les 2 ul & li*/
+ 
+
+
+
+

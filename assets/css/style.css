@@ -1,0 +1,362 @@
+@import url(form.css);
+
+:root {
+  --vert: rgb(46, 49, 143);
+  --departd: rgb(175, 15, 78);
+  --degrade: linear-gradient(
+    352deg,
+    rgba(175, 15, 78, 1) 0%,
+    rgba(9, 9, 121, 1) 52%
+  );
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+header + section {
+  background: rgb(175, 15, 78);
+  background: linear-gradient(
+    352deg,
+    rgba(175, 15, 78, 1) 0%,
+    rgba(9, 9, 121, 1) 52%
+  );
+  width: 100%;
+  min-height: 511px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 79%);
+  box-shadow: inset 10px 10px;
+  flex-wrap: wrap;
+}
+header + section > a > figure {
+  background: white;
+  width: 9%;
+  min-height: 480px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+header + section > a > figure > img {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+header > a {
+  display: block;
+  width: 60px;
+}
+
+hgroup {
+  width: 17.2%;
+  width: 270px;
+  margin-left: 5%;
+}
+
+h1 {
+  font-size: 50px;
+  margin-bottom: 2vh;
+  font-weight: 400;
+}
+h1,
+h2 {
+  font-family: var(--typo);
+}
+
+#en {
+  font-weight: 500;
+  border-bottom: 5px solid black;
+}
+
+#seine {
+  font-weight: 700;
+  border-bottom: 5px solid black;
+}
+
+main > section:first-child {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 5vh;
+  gap: 10px;
+  /* gap = espace */
+}
+
+main > section:first-child > article {
+  flex: 1;
+  min-width: 270px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 1px 1px 3px black;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+section:first-child > article :is(h3, p) {
+  margin: 10px;
+}
+.bleu {
+  display: block;
+  background: blue;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  clip-path: polygon(0 0, 0% 100%, 100% 0);
+}
+main {
+  position: relative;
+}
+main > section:first-child > h2 {
+  position: absolute;
+  top: 0vh;
+  width: 100%;
+  color: black;
+}
+
+figure.velo > img {
+  min-width: 100%;
+  max-width: 100%;
+}
+.fa-heart {
+  color: white;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+.fa-heart:hover {
+  color: red;
+}
+main > section:nth-child(2) {
+  background: var(--departd) var(--degrade);
+  display: flex;
+  flex-wrap: wrap;
+}
+article.h,
+article.b {
+  width: 100%;
+  min-height: 400px;
+  border: 1px solid white;
+  position: relative;
+  border-radius: 20px;
+}
+
+article.h {
+  top: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  min-height: 800px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 10px;
+}
+article.h > figure {
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+article.h > a {
+  display: block;
+  text-align: center;
+  background: rgb(255, 255, 255, 0.8);
+  color: gray;
+  border-radius: 30px;
+  border: 1px solid white;
+  width: 150px;
+  padding: 10px 0;
+  margin: 20px 0;
+  text-decoration: none;
+}
+article.h > h2 {
+  margin: 10px 0;
+}
+
+article.b {
+  top: -390px;
+  background: rgba(255, 255, 255, 0.38);
+  min-height: 400px;
+  display: flex;
+}
+section.apple {
+  flex: 1;
+  min-width: 270px;
+  padding: 10px;
+}
+
+.paragraf {
+  display: flex;
+}
+.paragraf > p {
+  flex: 1;
+  text-align: center;
+}
+.paragraf > p > strong {
+  width: 100%;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  display: block;
+  width: 100%;
+  padding: 10px;
+}
+
+article.b > figure {
+  display: flex;
+  flex: 1;
+  background: red;
+  height: 200px;
+  border-radius: 20px;
+}
+.progress-bar {
+  display: block;
+  height: 20px;
+  background: var(--degarde) var(--departd);
+}
+.progress {
+  background: white;
+  display: block;
+  height: 5px;
+  margin: 10px;
+  border-radius: 10px;
+}
+div.top {
+  flex: 1;
+}
+/* 
+.button-containers {
+  margin: 15px 0;
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+ width: 70px;
+ height: 30px;
+ border-radius: 20px;
+ cursor: pointer;
+ border: none;
+ text-transform: uppercase;
+ letter-spacing: 2px;
+ font-size: 10px;
+ font-weight: bold;
+ box-shadow: rgba(0, 0, 0, 0.1);
+ transition: all 0.3s ease;
+}
+
+.button-1 {
+  color: black;
+  border: 2px solid white;
+}
+
+.button-1:hover {
+  color: white; }*/
+@media screen and(min-width:768px) {
+  main {
+    width: 80%;
+    background: white;
+    margin: auto;
+  }
+  header + section {
+    background: var(--departd) var(--degarde);
+    width: 100%;
+    min-height: 511px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 79%);
+    box-shadow: inset 10px 10px;
+    flex-wrap: wrap;
+  }
+  header + section > a > figure {
+    background: white;
+    width: 9%;
+    min-height: 480px;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  header + section > a > figure > img {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  header > a {
+    display: block;
+    width: 60px;
+  }
+
+  hgroup {
+    width: 17.2%;
+    width: 270px;
+    margin-left: 5%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  main {
+    width: 100%;
+    padding: 5px;
+  }
+
+  header > a {
+    display: block;
+    width: 60px;
+    margin: auto;
+  }
+
+  header + section {
+    background: var(--vert);
+    background: linear-gradient(
+      352deg,
+      rgba(175, 15, 78, 1) 0%,
+      rgba(9, 9, 121, 1) 52%
+    );
+    width: 100%;
+    min-height: 511px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 79%);
+    box-shadow: inset 10px 10px;
+    flex-wrap: wrap;
+    padding: 20px 0;
+  }
+  
+
+  hgroup {
+    width: 80%;
+    width: 270px;
+    margin-left: 5%;
+  }
+}
+#modal:not(:target) {
+  background: red;
+  position: fixed;
+  bottom: 0;
+  height: 30vh;
+  width: 100%;
+}
+
+#modal:target {
+  display: none;transition: .5s;
+}
+
+#modal:target{display:none;}
